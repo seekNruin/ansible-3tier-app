@@ -55,7 +55,7 @@
     name: postgresql.service
     state: restarted
 
-- name: Create a new database with name "{{ pg_db_name }}"
+- name: Create a new database with name {{ pg_db_name }}
   postgresql_db:
     name: "{{ pg_db_name }}"
 
